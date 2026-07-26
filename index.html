@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+       .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        box-sizing: border-box;
+        }
+        .header:hover{
+            color:brown;
+        }
+        nav{
+            display: flex;
+            gap:10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: blue;
+        }
+        nav a:hover{
+            color: rgb(247, 20, 39);
+        }
+        .home{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height:712px;
+            background-color:lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            scroll-margin-top: 90px;
+        }       
+        .icons {
+            position:absolute;
+        }
+        .icons i{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            background-color: white;
+        }
+        .icons i:hover{
+            background-color: blue;
+            color: white;
+        }
+        #about{
+            height:680px;
+            background-color:lavender;
+            font-size: 20px;
+            padding-top: 90px;;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            height:80%;
+        }
+        .intro{
+            width: 60%;
+        }
+        .skills{
+            width: 40%;
+        }
+        .skills ul{
+            list-style: none;
+            padding: 0;
+            }
+            .skills li{
+            display: inline-block;
+            background-color: white;
+            padding: 10px 15px;
+            margin: 8px;
+            border-radius: 5px;
+            font-weight: bold;
+            }
+        #contact{
+            text-align:center;
+            align-content: center;
+            background-color: lightgrey;
+            height:712px;
+            width:100%;
+            font-size: 50px;
+        }
+        .contact-info{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            font-size:18px;
+            gap:10px;
+            margin-left:200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+    <div class="imgdiv">
+    <img src="profile.jpg" alt="Meghana"  style="height:50px; width:50px; border-radius:50%; margin:10px;position:absolute;top:0%">
+    <span style="margin-left:80px; position: absolute; top:30px">Sri Lakshmi Meghana</span>
+   </div>
+   <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+   </nav>
+  </header>
+
+<section id="home">
+   <div class="home">
+    <h1>Hello,I'm Sri Lakshmi Meghana </h1>
+    <pre>I enjoy designing and developing websites using HTML, CSS, and JavaScript. 
+         I'm always eager to learn and create meaningful digital experiences.</pre>
+    <div class="icons">
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+   </div>
+   </div>
+</section>
+
+<section id="about">
+    <h1 style="text-align: center;">ABOUT ME</h1>
+    <div class="about">
+        <div class="intro">
+    <h2 style="text-align: left;">INTRODUCTION</h2>
+    <p  style="text-align: justify;">I am an Electronics and Communication Engineering student with a strong interest in Frontend Web Development.I enjoy building responsive and 
+    user-friendly websites while continuously improving my HTML, CSS, and JavaScript skills.</p>
+        </div>
+        <div class="skills">
+            <h2 style="text-align: left;">My Skills</h2>
+            <ul type="circle" style="list-style: none; padding:0;">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" style="background-color:lightseagreen; padding-top:90px; text-align:center; height:712px;">
+    <h1>PROJECTS</h1>
+    <div style="display:flex; justify-content:center; gap:40px; margin-top:40px;">
+        <!--project-1-->
+    <div style="width:350px; background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px gray;">
+        <img src="Arogyamitra.png"alt="Arogyamitra" style="width:100%; height:180px; border-radius:8px;">
+
+        <h2>Arogyamitra</h2>
+        <p>A multilingual health chatbot with voice support,translation and emergency alerts.</p>
+        <p><b>Tech:</b> HTML, CSS, JavaScript, Flask, Python, AWS</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div style="width:350px; background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px gray;">
+        <img src="portfolio.png" alt="Portfolio" style="width:100%; height:180px; border-radius:8px;">
+        <h2>Portfolio Website</h2>
+        <p>A responsive personal portfolio built using HTML and CSS. to showcase my skills and projects.</p>
+        <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+        </div>
+    </div>
+</section>
+    
+</section>
+<section id="contact">
+    <h1>CONTACT ME</h1>
+    <p>Feel free to reach out for collabration or any queries.</p>
+    <div class="contact-info">
+        <p>📧 <strong>Email:</strong>
+            <a href="mailto:meghanauppuluri4@gmail.com">meghanauppuluri4@gmail.com</a></p>
+        <p>📞<strong>Phone:</strong>
+            <a href="tel:8465095689">Phone Number</a></p>
+        <p>🔗<strong>Linkedin:</strong>
+            <a href="https://www.linkedin.com/in/sri-meghana7" target="_blank"> Sri Lakshmi Meghana</a></p>
+        <p>🐱<strong>Github:</strong>
+            <a href="https://github.com/Sri-Lakshmi-Meghana" target="_blank">Sri Lakshmi Meghana</a></p>    
+    </div>
+</section>
+</body>
+</html>
